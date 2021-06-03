@@ -16,6 +16,7 @@ pipeline{
         stage('Build-react'){
             steps{
                 sh 'echo build react'
+                sh "npm install react-scripts"
                 sh 'npm run build'
             }
         }
