@@ -1,0 +1,8 @@
+cara deploy react ke jenkins:
+    - untuk pembuatan pipeline dan seeting github itu sama dengan cara deploy nodejs
+    - pertama install plugin node js dan settingnya
+    - bisa dilihat cara settingnya di https://medium.com/@gustavo.guss/jenkins-starting-with-pipeline-doing-a-node-js-test-72c6057b67d4#:~:text=In%20Plugin%20manager%2C%20click%20on,the%20tab%2C%20search%20the%20plugins.&text=Search%20for%20nodejs%20and%20mark%20the%20checkbox.&text=Click%20on%20button%20%E2%80%9CDownload%20now%20and%20install%20after%20restart%E2%80%9D.&text=On%20next%20screen%2C%20mark,and%20no%20jobs%20are%20running%E2%80%9D.
+    - tambah tools {nodejs "node"} pada jenkinsfile 
+    - sebelum di build tambah library react-scripts dengan cara npm install react-scripts
+    - contoh dapat dilihat pada jenkinsfile pada repo ini
+    
